@@ -2,14 +2,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Album example · Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <title>Lavanya Surikapuram</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -34,15 +33,15 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Lavanya Surikapuram</a>
+        <a class="navbar-brand" href="{% url 'home'%}">Lavanya Surikapuram</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">Twitter</a>
-            <a class="nav-item nav-link" href="#">Resume</a>
-            <a class="nav-item nav-link" href="#">Blog</a>
+            <a class="nav-item nav-link" href="https://www.facebook.com/lavanya.reddy.18">FB</a>
+            <a class="nav-item nav-link" href="{% static 'LavanyaSurikapuram.pdf' %}">Resume</a>
+            <a class="nav-item nav-link" href="{% url 'allblogs'%}">Blog</a>
             <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </div>
         </div>
@@ -57,7 +56,9 @@
       <p class="lead text-muted">Programming is an art form and hence finding an analytical solution or building a website by using Python/Django is my favorite thing to do. A passionate Software Developer, well Known for excellence in learning and implementation of latest technology skills in a short span of time. Specializes in custom Web Application Development using Python, MongoDB, and Django Web framework.</p>
       <p>
         <a href="mailto:lsurikapuram@hawk.iit.edu" class="btn btn-primary my-2">Email ME</a>
-      </p>
+        </p>
+        <img src = {% static 'lavapr.jpg' %} height = 300 />
+
     </div>
   </section>
 
