@@ -64,8 +64,9 @@
 
   <div class="album py-5 bg-light">
     <div class="container">
-      {% for job in jobs.all %}
       <div class="row">
+      {% for job in jobs.all %}
+
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <img class="bd-placeholder-img card-img-top" src = "{{ job.image.url }}" />
@@ -74,8 +75,10 @@
             </div>
           </div>
         </div>
-      </div>
+
       {% endfor %}
+
+      </div>
     </div>
   </div>
 
